@@ -13,8 +13,8 @@
 
 function printReceipt(idInformation,items) {
      let totalInformation = countItems(idInformation);
-     let totalPrice = calculateTotal(totalInformation);
      let itemInformation = getItemInformation(items,totalInformation);
+     let totalPrice = calculateTotal(itemInformation);
     return printReceiptInformation(itemInformation,totalPrice);
 }
 //console.log(printReceipt());
